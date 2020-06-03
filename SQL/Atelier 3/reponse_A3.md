@@ -10,7 +10,7 @@ ________________________________________________________________________________
 __________________________________________________________________________________________
 ## 3 Sélectionner tous les contenus distincts dans toutes les cases.
 ```sql
-    SELECT DISTINCT Contents FROM boxes 
+    SELECT DISTINCT Contents FROM boxes
 ```
 __________________________________________________________________________________________
 ## 4 Sélectionner la valeur moyenne de toutes les boîtes.
