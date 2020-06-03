@@ -3,7 +3,7 @@
 . SELECT Name FROM Pieces;
 ```
 
- 
+
 __
 ## question 2
 
