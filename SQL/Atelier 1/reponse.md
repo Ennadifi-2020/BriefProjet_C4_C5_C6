@@ -142,5 +142,5 @@ UPDATE products SET Price = Price - (Price*0.1);
 ```
 ## (Q24) Appliquer une remise de 10 % à tous les produits dont le prix est supérieur ou égal à 120 $.
 ```sql
-UPDATE products SET Price = Price*0.9 WHERE Price >= 120;
+UPDATE products SET Price = Price*0.9 WHERE Price >= 120
 ```
