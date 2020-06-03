@@ -1,6 +1,6 @@
 ## 1 Sélectionner tous les entrepôts.
 ```sql
-    SELECT Warehouse FROM boxes
+    SELECT Warehouse FROM boxes;
 ```
 __________________________________________________________________________________________
 ## 2 Sélectionnez toutes les cases dont la valeur est supérieure à 150 $.
@@ -10,12 +10,12 @@ ________________________________________________________________________________
 __________________________________________________________________________________________
 ## 3 Sélectionner tous les contenus distincts dans toutes les cases.
 ```sql
-    SELECT DISTINCT Contents FROM boxes
+    SELECT DISTINCT Contents FROM boxes;
 ```
 __________________________________________________________________________________________
 ## 4 Sélectionner la valeur moyenne de toutes les boîtes.
 ```sql
-    SELECT AVG(Value) FROM boxes
+    SELECT AVG(Value) FROM boxes;
 ```
 __________________________________________________________________________________________
 ## 5 Sélectionner le code de l'entrepôt et la valeur moyenne des boîtes dans chaque entrepôt.
@@ -55,27 +55,27 @@ ________________________________________________________________________________
 __________________________________________________________________________________________
 ## 12 Créer une nouvelle boîte, avec le code "H5RT", contenant des "Papers" d'une valeur de 200 $, et située dans l'entrepôt 2.
 ```sql
-    12-INSERT INTO boxes (code,contents,Value,warehouse) VALUES ('H5RT','Papers',200,2)
+    12-INSERT INTO boxes (code,contents,Value,warehouse) VALUES ('H5RT','Papers',200,2);
 ```
 _______________________________________________________________________________________
 ## 13 Réduire la valeur de toutes les boîtes de 15 %.
 ```sql
-    UPDATE boxes SET VALUE=0.85*VALUE
+    UPDATE boxes SET VALUE=0.85*VALUE;
 ```
 __________________________________________________________________________________________
 ## 14 Retirer toutes les boîtes d'une valeur inférieure à 100 $.
 ```sql
-    DELETE FROM boxes WHERE value<100
+    DELETE FROM boxes WHERE value<100;
 ```
 __________________________________________________________________________________________
 ## 15 Retirer toutes les boîtes des entrepôts saturés.
 ```sql
-    delete from warehouses WHERE w.Capacity <COUNT(b.Contents) 
+    delete from warehouses WHERE w.Capacity <COUNT(b.Contents);
 ```
 __________________________________________________________________________________________
 ## 16 Ajouter un indice pour la colonne "Entrepôt" dans le tableau "boîtes".
 ```sql
-    CREATE index indice on boxes(Warehouse)
+    CREATE index indice on boxes(Warehouse);
 ```
 __________________________________________________________________________________________
 ## 17 Imprimer tous les index existants
