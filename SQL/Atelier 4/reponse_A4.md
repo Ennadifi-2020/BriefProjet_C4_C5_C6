@@ -46,7 +46,8 @@ __
 __
 ## question 9
 ```sql
-. UPDATE Movies SET Rating='G' WHERE Rating IS NULL; 
+. UPDATE Movies SET Rating='G' WHERE Rating IS NULL;
+  
 10/ 
 . DELETE FROM MovieTheaters WHERE Movie IN
    (SELECT Code FROM Movies WHERE Rating = 'NC-17');
